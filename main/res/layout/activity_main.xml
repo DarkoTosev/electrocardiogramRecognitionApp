@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get File Name From SDCard"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout android:id="@+id/relativeLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:text="Browse"
+            android:id="@+id/skipButton"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:onClick="getFile">
+        </Button>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/skipButton"
+            android:textColor="#000"
+            android:ems="8"
+            android:gravity="center"
+            android:inputType="textPersonName">
+        </EditText>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editText2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="8"
+        android:textColor="#000"
+        android:inputType="textPersonName">
+    </EditText>
+</LinearLayout>
