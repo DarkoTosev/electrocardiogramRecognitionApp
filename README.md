@@ -1,0 +1,2 @@
+# electrocardiogramRecognitionApp
+Using e-Health sensor platform for Arduino I created a dataset of electrocardiograms readings gained from multiple individuals. The dataset is later prepared and preprocessed in Java and Orange and next a Decision tree model was trained on it using Weka. Finally, if-then rules are extracted from the Decision tree and integrated into an Android application for recognizing electrocardiograms.
